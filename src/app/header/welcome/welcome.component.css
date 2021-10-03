@@ -1,0 +1,122 @@
+/* .main-text {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  animation-name: text;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+} */
+
+.description {
+  position: absolute;
+  background-color: transparent;
+  top: 20%;
+  left: 40%;
+  animation-name: text;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(1, -1.29, 0.68, 1.35);
+  animation-fill-mode: forwards;
+}
+
+svg {
+  margin-top: 5vh;
+  width: 60vw;
+  height: 80vh;
+  animation-name: logo;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+.right-text {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+@keyframes logo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes text {
+  from {
+    top: 45%;
+    opacity: 0;
+  }
+  to {
+    top: 20%;
+    opacity: 1;
+  }
+}
+
+.main-text {
+  font-size: 4rem;
+  background-color: transparent;
+}
+
+.sub-text {
+  font-size: 2rem;
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+.movie-path {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  0% {
+    fill: red;
+  }
+  50% {
+    fill: rgb(253, 253, 253);
+  }
+  100% {
+    fill: red;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1000px) {
+  svg {
+    margin-top: 30vh;
+    width: 100vw;
+  }
+
+  .description {
+    position: absolute;
+    background-color: transparent;
+    top: 10%;
+    left: 10%;
+    animation-name: text;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(1, -1.29, 0.68, 1.35);
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes text {
+    from {
+      top: 35%;
+      opacity: 0;
+    }
+    to {
+      top: 7%;
+      opacity: 1;
+    }
+  }
+}

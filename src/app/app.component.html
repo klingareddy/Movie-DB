@@ -1,0 +1,11 @@
+<div>
+  <div *ngIf="onSuccess" class="overlay" (click)="onOverlayClose()"></div>
+  <div *ngIf="onSuccess" class="overlay-box">
+    <div class="msg">
+      Yahooo!<br />
+      Sign Up is successfull...
+    </div>
+    <button (click)="onClickLogin()">SignIn Now</button>
+  </div>
+  <app-header></app-header>
+</div>

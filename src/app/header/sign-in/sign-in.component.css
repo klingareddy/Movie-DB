@@ -1,0 +1,140 @@
+.login-page {
+  position: relative;
+  height: 80vh;
+}
+svg {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  right: 0;
+}
+.container {
+  position: absolute;
+  width: 40%;
+  height: 400px;
+  display: flex;
+  padding-left: 80px;
+  padding-top: 150px;
+}
+
+.form {
+  /* border: solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 300px;
+  justify-content: space-evenly;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.input input {
+  width: 70%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid rgb(51, 0, 0);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.input input:hover {
+  transition-duration: 0.2s;
+  background-color: rgb(233, 239, 241);
+}
+
+.submit {
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 0;
+}
+.container,
+.form,
+.form form,
+.buttons,
+.sign-up,
+.sign-in,
+.input,
+button {
+  background-color: transparent;
+}
+
+button,
+input {
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  svg {
+    width: 100vw;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+    padding-top: 50px;
+
+    /* margin-left: 15%; */
+  }
+  .input input {
+    width: 300px;
+  }
+  .form {
+    padding-left: 24px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 50px;
+
+    /* margin-left: 15%; */
+  }
+  .input input {
+    width: 200px;
+  }
+  .form {
+    padding-left: 0;
+  }
+}
+
+.circle-lock {
+  animation-name: lock;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes lock {
+  0% {
+    fill: rgb(10, 82, 10);
+  }
+  50% {
+    fill: rgb(180, 23, 23);
+  }
+  100% {
+    fill: rgb(10, 82, 10);
+  }
+}
+
+.welcome {
+  font-weight: bold;
+}
+
+.btnstyle {
+  background-color: rgb(124, 136, 124);
+  color: white;
+  border: none;
+}
+.btnstyle:hover {
+  transition-duration: 0.1s;
+  box-shadow: rgb(5, 46, 4, 0.7) 0px 0px 8px 0px;
+  font-weight: bold;
+}

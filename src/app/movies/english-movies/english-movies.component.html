@@ -1,0 +1,5 @@
+<section class="movie-list grid-box">
+  <div *ngFor="let movie of movies" class="movie-grid-item">
+    <app-movie [movie_name]="movie"></app-movie>
+  </div>
+</section>

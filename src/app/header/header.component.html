@@ -1,0 +1,20 @@
+<div class="top-bar">
+  <div class="logo">
+    <img src="../../assets/movieicon.svg" alt="log" />
+    <p class="brand-text">IMBD</p>
+  </div>
+  <div class="right-buttons">
+    <ul>
+      <li *ngIf="showLogout" (click)="onLogout()">Logout</li>
+      <li *ngIf="showSignUp" (click)="onEnter('sign up')">Sign Up</li>
+      <li
+        *ngIf="showSignUp"
+        (click)="onEnter('sign in')"
+        class="animate__heartBeat sign-in"
+      >
+        Sign In
+      </li>
+    </ul>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="input">
+    <input type="text" placeholder="Enter Movie Name" #movie_name/>
+    <button (click)="onSearch()">Get Details</button>
+  </div>
+  <div class="main" *ngIf="movie != undefined">
+    <div class="img"><img [src]="movie.Poster" alt="image" /></div>
+    <div class="info">
+      <div><span>Title:</span> {{ movie.Title }}</div>
+      <div><span>Released:</span> {{ movie.Released }}</div>
+      <div><span>Director:</span> {{ movie.Director }}</div>
+      <div><span>Writer:</span> {{ movie.Writer }}</div>
+      <div><span>Actors:</span> {{ movie.Actors }}</div>
+      <div><span>Country:</span> {{ movie.Country }}</div>
+      <div><span>ImdbRating:</span> {{ movie.imdbRating }}</div>
+      <div><span>Type:</span> {{ movie.Type | titlecase }}</div>
+      <div><span>BoxOffice:</span> {{ movie.BoxOffice }}</div>
+      <div><span>Production:</span> {{ movie.Production }}</div>
+      <div><span>Language:</span> {{ movie.Language }}</div>
+      <div><span>Plot:</span> {{ movie.Plot }}</div>
+    </div>
+  </div>
+</div>
